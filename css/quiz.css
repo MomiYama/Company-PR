@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color:rgb(115, 216, 254);
+
+}
+
+body {
+	color: rgba(81,81,81,1.00);
+	font-size:14px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+	width: 100%;
+	min-width: 740px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+#main {
+	width: 90%;
+	background-color: rgba(255,251,215,1.00);
+	
+	/* ▼CSS3 */
+	border-bottom-left-radius: 20px;  /* 左上 */
+    border-bottom-right-radius: 20px; /* 右上 */
+
+    /* ▼Safari,Chrome */
+    -webkit-border-bottom-left-radius: 20px;  /* 左上 */
+    -webkit-border-bottom-right-radius: 20px; /* 右上 */
+
+   /* ▼Firefox */
+   -moz-border-radius-bottomleft: 20px;  /* 左上 */
+   -moz-border-radius-bottomright: 20px; /* 右上 */
+
+	padding-right:5%;
+	padding-left:5%;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin-bottom:2%;
+	float:left;
+}
+
+#content{
+	width: 80%;
+	text-align:center;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left:10%;
+	margin-right:10%;
+	padding-bottom:2%;
+	
+	background-color: rgba(255,255,255,1.00);
+
+	float:left;
+	display: block;
+	border:rgba(252,255,141,1.00);
+	-moz-border-radius : 20px;    /* Firefox */
+    -webkit-border-radius: 20px; /* Safari,Chrome */
+    border-radius: 20px;         /* CSS3 */
+
+}
+
+#loopslider {
+	margin: 0 auto;
+	width: 500px;
+	height: 100px;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+}
+
+#loopslider ul {
+	height: 100px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+
+#loopslider ul li {
+	width: 100px;
+	height: 100px;
+	float: left;
+	display: inline;
+	overflow: hidden;
+}
+
+/* =======================================
+	ClearFixElements
+======================================= */
+#loopslider ul:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+#loopslider ul {
+	display: inline-block;
+	overflow: hidden;
+}
+
+
+
+.midashi {
+	
+	color:rgb(12, 195, 98);
+	text-align:center;
+	
+}
+
+h1 {
+	font-size:30px;
+	margin-top: 0.75em;
+	margin-bottom: 0.1em;
+}
+
+
+h2 {
+	font-size:20px;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;	
+	
+}
+
+p {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;	
+	
+}
+
+a:hover,  a:active,  a:focus, a.thispage {
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	-ms-filter: “alpha( opacity=80 )”;
+}
+
+
+
+.imageCover1 {
+    position: relative;
+    width: 1000px;	height: 200px;
+}
+
+.imageCover1 .baseImage {
+    width: 1000px;	height: 200px;
+
+}
+
+.imageCover1 .retop {
+    width: 100px;	height: 75px;
+
+	-webkit-animation: jump02 1.3s  infinite alternate;
+    animation: jump02 1.3s  infinite alternate;
+	
+	position: absolute;	right: 420px;	bottom: 100px;
+
+}
+
+
+.imageCover1 .cloud01 {
+    width: 100px;	height: 75px;	align-content:center;
+	
+	-webkit-animation: jump 1.3s infinite alternate;
+    animation: jump 1.3s  infinite alternate;
+	
+	position: absolute;	right: 320px;	bottom: 100px;
+	
+}
+
+.imageCover1 .cloud02 {
+    width: 100px;	height: 75px;
+
+	-webkit-animation: jump02 1.3s  infinite alternate;
+    animation: jump02 1.3s  infinite alternate;
+	
+	position: absolute;	right: 220px;	bottom: 100px;
+
+}
+
+.imageCover1 .cloud03 {
+    width: 100px;	height: 75px;
+	
+	-webkit-animation: jump 1.3s  infinite alternate ;
+    animation: jump 1.3s  infinite alternate;
+	
+	position: absolute;	right: 120px;	bottom: 100px;
+
+}
+
+.imageCover1 .cloud04 {
+    width: 100px;	height: 75px;
+	
+	-webkit-animation: jump02 1.3s  infinite alternate ;
+    animation: jump02 .1.3s  infinite alternate;
+	
+	position: absolute;	right: 20px;	bottom: 100px;
+
+}
+
+
+
+@-webkit-keyframes jump {
+  0% { -webkit-transform: translateY(-5px); }	100% { -webkit-transform: translateY(0px); }	}
+
+@keyframes jump {
+  0% { transform: translateY(-5px); }			100% { transform: translateY(0px); }	}
+
+
+@-webkit-keyframes jump02 {
+  0% { -webkit-transform: translateY(5px); }	100% { -webkit-transform: translateY(-5px); }	}
+
+@keyframes jump02 {
+  0% { transform: translateY(5px); }			100% { transform: translateY(-5px); }	}
